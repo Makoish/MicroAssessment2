@@ -209,6 +209,8 @@ class Window(QWidget):
             if i == len(self.userInput)-1:
                 if self.userInput[i] == "=":
                     return False
+                else:
+                    break
             if i > 1 and self.userInput[i] == "=":
                 return False
 
